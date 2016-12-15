@@ -1,0 +1,125 @@
+.task_name {
+  color: black;
+}
+.event_date {
+    font-size: 41pt;
+    color: #E9967A;
+}
+.task {
+    margin-bottom: 70px;
+}
+
+.comment {
+    margin: 20px 0px 20px 20px;
+}
+
+
+html, body{
+  width: 100%;
+  font-family: 'Istok Web', sans-serif;
+  vertical-align: middle;
+}
+a, a:hover, .menu_item, .submit,.vk,.fb,.mail,.gm{
+  text-decoration: none;
+  transition: all 0.3s linear;
+}
+
+.menu_item a{
+  border-bottom: 3px solid white;
+  color: black;
+}
+.menu_item a:hover{
+  border-bottom: 3px solid #D8BAB1;
+  cursor: pointer;
+}
+.center{
+  text-align: center;
+}
+.right{
+  text-align: right;
+}
+h1{
+  font-size: 64px;
+  color: #050028;
+  font-weight: 700;
+  line-height: 70px;
+  margin-bottom: 0;
+}
+h2{
+  font-size: 32px;
+  font-weight: 700;
+}
+.main_text{
+  font-size: 20px;
+}
+header{
+  width: 100%;
+  padding: 10px 0;
+
+  -webkit-box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.75);
+}
+.logo, .menu, .menu_item{
+  display: inline-block;
+  font-size: 14px;
+}
+.menu_item{
+  margin-right: 20px;
+}
+form{
+  padding: 0
+}
+.logo img{
+  width: 55px;
+  height: 55px;
+}
+.user_inform input{
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
+  margin: 30px 0;
+}
+.check_category div{
+  margin-top: 10px;
+}
+.submit{
+  padding: 15px;
+  margin-top: 30px;
+  background-color: #8CC63F;
+  box-shadow: none;
+  border:none;
+  color: white;
+}
+.submit:hover{
+  background-color: #64AA2D;
+}
+.vk{
+  background: #3f7da5;
+}
+.mail{
+  background: #366899;
+}
+.fb{
+  background: #3b5998;
+}
+.gm{
+  background: #dd4b38;
+}
+.vk:hover{
+  background: #206795;
+}
+.mail:hover{
+  background: #1c568f;
+}
+.fb:hover{
+  background: #214186;
+}
+.gm:hover{
+  background: #cd3420
+}
+.soc {
+  padding: 15px;
+  color: white;
+  margin-top: 10px;
+}

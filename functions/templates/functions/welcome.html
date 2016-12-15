@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome</title>
+</head>
+
+<style>
+    p {
+        font-style: inherit;
+        font-family: "Lucida Grande", Verdana, Arial, sans-serif;
+    }
+    h1 {
+        color: #0000cc;
+    }
+    h2 {
+    font: 130% serif;
+    margin-left: 5%;
+   }
+   button {
+        color: #0000cc;
+{#   	font: 100% serif;#}
+{#   	width: 110pt;#}
+   }
+
+{#  #}
+{#   div {#}
+{#   	margin-left: 5%;#}
+{#   }#}
+{#    hr {#}
+{#   	width: 95%;#}
+{#   }#}
+{#   img {#}
+{#   	margin-top: 1%;#}
+{#   }#}
+{#   form {#}
+{#   	margin: 0%;#}
+{#   	padding: 0%#}
+{#   }#}
+{#   span, li {#}
+{#   	font-weight: bold;#}
+{#   }#}
+  </style>
+
+<body>
+
+
+{% load static %}
+
+    <h1> Добро пожаловать на главную страничку проекта по Численным Методам </h1>
+    <h2> Розенвальд Михаль </h2>
+    <h3> 141 группа </h3>
+
+    <p> Схема проекта </p>
+    <img src="{% static "images/scheme_modules.png" %}"> <!-- "https://postimg.org/image/y5fhveylf/"-->
+    <a href='https://postimg.org/image/y5fhveylf/' target='_blank'>
+    <img src="{% static "images/scheme_modules.png" %}" alt="scheme_modules.png" >
+
+{#    <a class="navbar-brand" href="{% url 'functions.views.welcome' %}"> Начать работу </a>#}
+{##}
+{#    <a  class="btn btn-block btn-info active" type="button"  href="{% url 'functions.views.new_poly' %}"  >#}
+{#            Табулировать Полином#}
+{#    </a>#}
+{##}
+{#    <a href="{% url 'blog.views.new_poly' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>#}
+   <p>
+        <a style="background-color : #449d44;" href='/solve_ode_manual' class="top-menu"> <button> Решить задачу систему ОДУ в <b>ручном режиме</b> </button> </a>
+   </p>
+
+   <p>
+        <a style="color: #DDB62B" href='/solve_ode_auto' class="top-menu"> <button> Решить задачу систему ОДУ в <b>автоматически режиме</b> </button> </a>
+   </p>
+
+
+
+   <p>
+       <a href='/new_poly' class="top-menu"> <button> Создать полином f(x) и Табулировать его </button> <span class="glyphicon glyphicon-plus"></span></a>
+   </p>
+
+    <p>
+        <a href='/rho_z_s_Tabulate' class="top-menu"> <button> Создать полиномы RHO, Z, S и Табулировать их </button> </a>
+    </p>
+
+    <p>
+        <a href='/tabulate_integral_from_file_path' class="top-menu"> <button> Табулировать интеграл </button> </a>
+    </p>
+
+    <p>
+        <a href='/Cauchy' class="top-menu"> <button> Решить задачу Коши методом Эйлера в <b>ручном режиме</b> </button> </a>
+    </p>
+
+    <p>
+        <a href='/Cauchy_auto' class="top-menu"> <button> Решить задачу Коши методом Эйлера в <b>автоматически режиме</b> </button> </a>
+    </p>
+
+</body>
+
+</html>

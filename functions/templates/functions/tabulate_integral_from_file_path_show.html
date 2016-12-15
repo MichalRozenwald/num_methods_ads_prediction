@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Show+Tabulation</title>
+</head>
+<body>
+{% load static %}
+    <h1> Введенный путь к табулированной функции: </h1>
+    <p> {{ file_path }} </p>
+
+    <h2> Табулированный интеграл - результат работы функции: </h2>
+    <p> {{ tabulate_integral_result }} </p>
+
+    <h2> Коэффициенты интерполяции функции - коэффициенты интерполяции функции: </h2>
+    <p> {{ interpolation_coefficients_results }} </p>
+
+    <a href='/' class="top-menu"> Вернуться на главную страницу <span class="glyphicon glyphicon-plus"></span></a>
+
+
+</body>
+</html>

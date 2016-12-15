@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Show+Tabulation</title>
+</head>
+<body>
+{% load static %}
+`<h1> Результаты решения задачи Коши методом Эйлера </h1>
+    <h2> x_0: </h2>
+    <p> {{ x_0 }} </p>
+
+    <h2> y_0: </h2>
+    <p> {{ y_0 }} </p>
+
+    <h2> betta: </h2>
+    <p> {{ betta }} </p>
+
+    <h2> T </h2>
+    <p> {{ T }} </p>
+
+
+    <h2> U функция: </h2>
+    <p> {{ U_str }} </p>
+    <h2> S функция: </h2>
+    <p> {{ S_str }} </p>
+    <h2> z функция: </h2>
+    <p> {{ z_str }} </p>
+
+    <h2> Табулированная функция сохранена в файл: </h2>
+    <p> {{ Cauchy_cvs_file_path }} </p>
+
+    <h2> Табулированная функция: </h2>
+    <p> {{ x_y_tabu_df }} </p>
+
+
+    <a href='/' class="top-menu"> Вернуться на главную страницу <span class="glyphicon glyphicon-plus"></span></a>
+
+
+</body>
+</html>

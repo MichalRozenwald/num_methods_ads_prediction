@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Show+Tabulation</title>
+</head>
+<body>
+{% load static %}
+    <p> Введенная функция: </p>
+    <p> {{ func_str }} </p>
+
+    <p> Табулированная функция: </p>
+    <p> {{ tabu_df }} </p>
+
+    <p> Табулированная функция таблица: </p>
+    <!-- <img src={{ tabu_df_table}}> -->
+    <link rel="import" href="/home/michal/Projects/ads_chm/Files/table.html">
+
+    <h2> ГРАФИК </h2>
+
+
+    <a href='/' class="top-menu"> Вернуться на главную страницу <span class="glyphicon glyphicon-plus"></span></a>
+
+
+</body>
+</html>

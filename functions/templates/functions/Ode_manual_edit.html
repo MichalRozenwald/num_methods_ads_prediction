@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Function</title>
+</head>
+
+<body>
+    <h1>Введите функции для решения Системы Обыкновенных Дифференциальных Уравнений (ОДУ) в <b>ручном режиме</b> </h1>
+
+    <h2> <b> {{ error }} </b> </h2>
+
+    <form method="POST" class="post-form">{% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="save btn btn-default"> Решить систему! </button>
+    </form>
+
+    <a href='/' class="top-menu"> Вернуться на главную страницу <span class="glyphicon glyphicon-plus"></span></a>
+
+
+</body>
+</html>

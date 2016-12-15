@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Function</title>
+</head>
+
+<body>
+    <h1>Введите значения параметров для задачи Коши </h1>
+    <p> Коэффициенты функций через запятую (без пробела)</p>
+
+    <h2> <b> {{ error }} </b> </h2>
+
+    <form method="POST" class="post-form">{% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="save btn btn-default"> Решить задачу Коши! </button>
+    </form>
+
+    <a href='/' class="top-menu"> Вернуться на главную страницу <span class="glyphicon glyphicon-plus"></span></a>
+
+
+</body>
+</html>

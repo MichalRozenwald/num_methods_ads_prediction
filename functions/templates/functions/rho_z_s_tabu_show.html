@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Show+Tabulation</title>
+</head>
+<body>
+{% load static %}
+    <h1> RHO функция: </h1>
+    <p> {{ rho_str }} </p>
+
+    <h2> Табулированная функция сохранена в файл: </h2>
+    <p> {{ tabu_save_path_rho }} </p>
+
+    <p> Табулированная функция (значения): </p>
+    <p> {{ rho_tabu_df }} </p>
+
+    <h2> ГРАФИК </h2>
+
+
+    <h1> Z функция: </h1>
+    <p> {{ z_str }} </p>
+
+    <h2> Табулированная функция сохранена в файл: </h2>
+    <p> {{ tabu_save_path_z }} </p>
+
+    <p> Табулированная функция: </p>
+    <p> {{ z_tabu_df }} </p>
+
+    <h2> ГРАФИК </h2>
+
+
+    <h1> S функция: </h1>
+    <p> {{ S_str }} </p>
+
+    <h2> Табулированная функция сохранена в файл: </h2>
+    <p> {{ tabu_save_path_S }} </p>
+
+    <p> Табулированная функция: </p>
+    <p> {{ S_tabu_df }} </p>
+
+    <h2> ГРАФИК </h2>
+
+    <!-- <p> Табулированная функция таблица: </p>
+    <img src={{ tabu_df_table}}>
+    <link rel="import" href="/home/michal/Projects/ads_chm/Files/table.html">-->
+
+    <a href='/' class="top-menu"> Вернуться на главную страницу <span class="glyphicon glyphicon-plus"></span></a>
+
+
+</body>
+</html>

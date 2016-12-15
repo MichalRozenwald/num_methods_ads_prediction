@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Show Ode solution</title>
+</head>
+
+{% load static %}
+<h1> Результаты решения ОДУ </h1>
+
+    <h2> rho функция: </h2>
+    <p> {{ rho }} </p>
+    <h2> S функция: </h2>
+    <p> {{ S }} </p>
+    <h2> z функция: </h2>
+    <p> {{ z }} </p>
+    <h2> f функция: </h2>
+    <p> {{ f }} </p>
+
+    <h2> x_0: </h2>
+    <p> {{ x_0 }} </p>
+
+    <h2> y_0: </h2>
+    <p> {{ y_0 }} </p>
+
+    <h2> betta: </h2>
+    <p> {{ betta }} </p>
+
+    <h2> T </h2>
+    <p> {{ T }} </p>
+
+
+{##}
+{#    <h2> Табулированная функция сохранена в файл: </h2>#}
+{#    <p> {{ Cauchy_cvs_file_path }} </p>#}
+{##}
+{#    <h2> Табулированная функция: </h2>#}
+{#    <p> {{ x_y_tabu_df }} </p>#}
+
+    {% if res %}
+        <h2> Графики введенных функций: </h2>
+        <img src="{% static 'rho_graph.png' %}" width=60%>
+        <img src="{% static 'S_graph.png' %}" width=60%>
+        <img src="{% static 'z_graph.png' %}" width=60%>
+        <h2> Решение: </h2>
+        <div>
+        {% for log in res %}
+            <li >{{ log }}</li>
+          {% endfor %}
+        {% if is_good_res %}
+          <img src="{% static 'solution.png' %}" width=90%>
+        {% endif %}
+        </div>
+	{% endif %}
+
+
+    <a href='/' class="top-menu"> Вернуться на главную страницу <span class="glyphicon glyphicon-plus"></span></a>
+
+</body>
+</html>
